@@ -31,8 +31,8 @@ function App() {
             <a href="mailto:ryandang7890@gmail.com">ryandang7890@gmail.com</a>
           </p>
           <div className="social-links">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/RRyanDang" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/vmdang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </section>
       </main>
