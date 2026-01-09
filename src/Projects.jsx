@@ -19,15 +19,15 @@ const projects = [
   },
   {
     title: "Autonomous Car for NEM 2025",
-    description: "an autonomous car that sees, thinks, and acts in real time. By training a custom YOLOv8 object detection model and integrating it with Raspberry Pi vision processing and microcontroller-based motor control, this project turns raw camera data into intelligent autonomous movement—demonstrating how AI and embedded systems come together to solve real-world problems.",
+    description: "An autonomous car that sees, thinks, and acts in real time. By training a custom YOLOv8 object detection model and integrating it with Raspberry Pi vision processing and microcontroller-based motor control, this project turns raw camera data into intelligent autonomous movement—demonstrating how AI and embedded systems come together to solve real-world problems.",
     stack: ["OpenCV", "YOLOv8", "Raspberry Pi", "C++", "VEX Microcontroller"],
     link: "https://github.com/RRyanDang/Mushroom-Following-Bot"
   },
   {
-    title: "Project 2",
-    description: "Description of your project here.",
-    stack: ["React", "Node.js", "CSS"],
-    link: "<link_to_project>"
+    title: "Auto Mood Music Player",
+    description: "A smart music player that automatically adjusts the playlist based on your current mood, using AI to analyze your behavior and preferences.",
+    stack: ["TensorFlow / Keras", "OpenCV", "Gemini API","Youtube Data API"],
+    link: "https://github.com/RRyanDang/Emotion-Auto-Music"
   }
 ]
 
