@@ -28,6 +28,12 @@ const projects = [
     description: "A smart music player that automatically adjusts the playlist based on your current mood, using AI to analyze your behavior and preferences.",
     stack: ["TensorFlow / Keras", "OpenCV", "Gemini API","Youtube Data API"],
     link: "https://github.com/RRyanDang/Emotion-Auto-Music"
+  },
+  {
+    title: "Uber Clone",
+    description: "A recreation of the Uber app",
+    stack: ["React", "Next.js", "TypeScript","Tailwind CSS","Firebase","Mapbox"],
+    link: "https://github.com/RRyanDang/Uber-Clone"
   }
 ]
 
