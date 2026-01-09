@@ -18,10 +18,10 @@ const projects = [
     link: "https://github.com/RRyanDang/Analysis-of-Crime-Patterns-in-Toronto-A-Data-Mining-Approach-to-Public-Safety"
   },
   {
-    title: "Project 2",
-    description: "Description of your project here.",
-    stack: ["React", "Node.js", "CSS"],
-    link: "<link_to_project>"
+    title: "Autonomous Car for NEM 2025",
+    description: "an autonomous car that sees, thinks, and acts in real time. By training a custom YOLOv8 object detection model and integrating it with Raspberry Pi vision processing and microcontroller-based motor control, this project turns raw camera data into intelligent autonomous movement—demonstrating how AI and embedded systems come together to solve real-world problems.",
+    stack: ["OpenCV", "YOLOv8", "Raspberry Pi", "C++", "VEX Microcontroller"],
+    link: "https://github.com/RRyanDang/Mushroom-Following-Bot"
   },
   {
     title: "Project 2",
