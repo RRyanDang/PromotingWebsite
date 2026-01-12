@@ -2,7 +2,7 @@ const techStack = {
   languages: ["JavaScript", "Python", "Java", "C++"],
   web: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express"],
   ai: ["TensorFlow", "PyTorch", "OpenCV", "NLP"],
-  database: ["MongoDB", "PostgreSQL", "MySQL", "Redis"]
+  database: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
 }
 
 function About() {
@@ -13,9 +13,9 @@ function About() {
         I’m a software engineering student who loves building things on the web, 
         learning fast, and solving real problems with clean, thoughtful code.
       </p>
-      <p>I have worked with various technologies and frameworks on different school/personal projects and club workshops & products.  
+      {/* <p>I have worked with various technologies and frameworks on different school/personal projects and club workshops & products.  
         Below are the notable ones. 
-      </p>
+      </p> */}
       
       <div className="tech-stack">
         <div className="tech-category">

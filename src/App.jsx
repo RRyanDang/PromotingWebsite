@@ -13,9 +13,15 @@ function App() {
   return (
     <div className={`app ${loaded ? 'loaded' : ''}`}>
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div className="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div className="nav-name">
+          {/* <a href="#about">Ryan Dang</a> */}
+          <h1>Ryan Dang</h1>
+        </div>
       </nav>
 
       <main>
