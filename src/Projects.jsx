@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react'
+
 const projects = [
   {
     title: "Stocky",
@@ -38,12 +40,54 @@ const projects = [
 ]
 
 function Projects() {
+  const [visibleCards, setVisibleCards] = useState(new Set())
+  const cardRefs = useRef([])
+
+  useEffect(() => {
+    const observers = []
+
+    cardRefs.current.forEach((card, index) => {
+      if (!card) return
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setVisibleCards((prev) => {
+                const newSet = new Set(prev)
+                newSet.add(index)
+                return newSet
+              })
+              // Stop observing once it's been seen
+              observer.unobserve(card)
+            }
+          })
+        },
+        {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        }
+      )
+
+      observer.observe(card)
+      observers.push(observer)
+    })
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect())
+    }
+  }, [])
+
   return (
     <section id="projects" className="section">
       <h2>Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <div
+            key={index}
+            ref={(el) => (cardRefs.current[index] = el)}
+            className={`project-card ${visibleCards.has(index) ? 'visible' : ''}`}
+          >
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <p><strong>Tech Stack:</strong> {project.stack.join(", ")}</p>
