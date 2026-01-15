@@ -91,7 +91,10 @@ function Projects() {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <p><strong>Tech Stack:</strong> {project.stack.join(", ")}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            <div className='link_box'>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+            
           </div>
         ))}
       </div>

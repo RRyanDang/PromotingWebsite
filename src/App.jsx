@@ -20,7 +20,7 @@ function App() {
         </div>
         <div className="nav-name">
           {/* <a href="#about">Ryan Dang</a> */}
-          <h1>Ryan Dang</h1>
+          <h1 className="rainbow-text">Ryan Dang</h1>
         </div>
       </nav>
 

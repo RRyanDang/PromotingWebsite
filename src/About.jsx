@@ -1,8 +1,8 @@
 const techStack = {
-  languages: ["JavaScript", "Python", "Java", "C++"],
-  web: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express"],
+  languages: ["Python", "C++", "Java","JavaScript","TypeScript"],
+  web: ["HTML", "CSS", "JavaScript", "React", "Next.js","RESTful APIs"],
   ai: ["TensorFlow", "PyTorch", "OpenCV", "NLP"],
-  database: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
+  database: ["AWS S3","Azure Blob Storage","MongoDB", "PostgreSQL", "MySQL", "Firebase"]
 }
 
 function About() {
@@ -19,18 +19,18 @@ function About() {
       
       <div className="tech-stack">
         <div className="tech-category">
-          <h3>Web Stack</h3>
+          <h3>Languages</h3>
           <div className="tech-tags">
-            {techStack.web.map((tech, index) => (
+            {techStack.languages.map((tech, index) => (
               <span key={index} className="tech-tag">{tech}</span>
             ))}
           </div>
         </div>
 
         <div className="tech-category">
-          <h3>Languages</h3>
+          <h3>Web Stack</h3>
           <div className="tech-tags">
-            {techStack.languages.map((tech, index) => (
+            {techStack.web.map((tech, index) => (
               <span key={index} className="tech-tag">{tech}</span>
             ))}
           </div>

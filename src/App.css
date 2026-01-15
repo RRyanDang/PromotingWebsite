@@ -410,30 +410,38 @@ nav a:hover::after {
   padding-top: 1rem;
 }
 
-.project-card > a {
+.project-card > div > a {
   display: inline-block;
-  padding-top: 0.75rem;
-  color: #1a1a1a;
+  /* padding-top: 0.75rem; */
+  color: #1470a4;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   position: relative;
   width: fit-content;
+  font-size: 13px;
+}
+.link_box {
+  border: 2px solid rgb(153, 206, 234);
+  width:60%;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgb(153, 206, 234);
 }
 
-.project-card > a::after {
+.project-card > div > a::after {
   content: '→';
   margin-left: 0.5rem;
   transition: transform 0.3s ease;
   display: inline-block;
 }
 
-.project-card > a:hover {
-  color: #1a1a1a;
+.project-card > div > a:hover {
+  color: #004367;
 }
 
-.project-card > a:hover::after {
+.project-card > div > a:hover::after {
   transform: translateX(4px);
 }
 
@@ -565,4 +573,12 @@ footer {
   .project-card {
     padding: 1.5rem;
   }
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, rgb(255, 131, 131), rgb(252, 206, 120), rgb(252, 252, 97), rgb(130, 130, 251), rgb(219, 184, 244), rgb(247, 173, 247));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Press Start 2P', monospace;
 }
