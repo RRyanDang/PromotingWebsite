@@ -365,6 +365,17 @@ nav a:hover::after {
   font-size: 1.25rem;
   color: #1a1a1a;
   letter-spacing: -0.01em;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.project-card h3:hover {
+  overflow: visible;
+  white-space: normal;
+  background: #fff;
+  position: relative;
+  z-index: 10;
 }
 
 .project-card > p {
@@ -374,6 +385,7 @@ nav a:hover::after {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.7;
+  height:120px;
 }
 
 .project-card > p:first-of-type {
@@ -405,7 +417,7 @@ nav a:hover::after {
 .project-card > p:last-of-type {
   font-size: 0.85rem;
   color: #888;
-  margin-top: auto;
+  margin-top: 5px;
   margin-bottom: 0.75rem;
   padding-top: 1rem;
 }
